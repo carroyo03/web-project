@@ -2,15 +2,16 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+const api_key = import.meta.env.VITE_NEWS_API_KEY;
+
 const NewsList = () => {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
     const fetchNews = async () => {
       try {
         const response = await axios.get(
-          //`https://newsapi.org/v2/everything?q=tesla&from=2024-11-30&sortBy=publishedAt&apiKey=${import.meta.env.NEWS_API_KEY}`
-          //c71e9ba79cb2402f86d0d26d3c17b1c6
-            `https://newsapi.org/v2/top-headlines?country=us&apiKey=c71e9ba79cb2402f86d0d26d3c17b1c6`
+
+            `https://newsapi.org/v2/top-headlines?country=us&apiKey=${api_key}`
         );
         setArticles(response.data.articles);
       } catch (error) {
