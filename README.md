@@ -12,7 +12,7 @@
 
 ## ⚙️ Instalación y Configuración
 
-### 🔧 Requisitos
+### Requisitos
 - **Node.js** v20+
 - **NPM** (incluido con Node.js)
 - Clave de API de [NewsAPI](https://newsapi.org/).
