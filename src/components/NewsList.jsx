@@ -11,8 +11,7 @@ const NewsList = () => {
       try {
         const response = await axios.get(
 
-            //`https://newsapi.org/v2/top-headlines?country=us&apiKey=${api_key}` // Latest US Top Headlines news
-            'http://localhost:3000/api/news' // URL al backend
+            `${import.meta.env.VITE_API_URL}/api/news`,
         );
         setArticles(response.data.articles);
       } catch (error) {
