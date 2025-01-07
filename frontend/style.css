@@ -12,99 +12,48 @@
   width: 100%;
   box-shadow: 0 2px 5px rgba(25, 5, 140, 0.2); /* Sombra */
   z-index: 1000; /* Siempre encima */
+  transition: top 0.3s ease; /* Transición para ocultar/mostrar */
 }
 
-  .barra-superior a {
-    color: white; /* Color del texto de los enlaces */
-    text-decoration: none; /* Sin subrayado */
-    margin: 0 10px; /* Espaciado entre enlaces */
-    font-weight: bold;
-    margin-right: 50px;
-  }
-
-  .barra-superior a:hover {
-    color: #f4a261; /* Cambiar color al pasar el ratón */
-  }
-
-  .logo {
-    font-size: 2em;
-    font-weight: bold;
-    font-family: 'The Boston', sans-serif; /* Cambiar la fuente */
-    flex-grow: 1; /* Asegura que el logo ocupe el espacio disponible */
-    text-align: center; /* Centra el texto */
-  }
-
-  .menu {
-    display: flex;
-  }
-
-  /* Estilo del contenedor de noticias */
-  .contenedor-noticias {
-    margin-top: 60px;
-    padding: 20px;
-  }
-
-  .categoria {
-    margin: 10px 0;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #0e0a51;
-  }
-  .noticia {
-    background-color: #f4f4f4;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    width: 90%; /* Ajusta el ancho de las tarjetas */
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .noticia:hover {
-    transform: scale(1.02); /* Reduce el aumento de tamaño */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .noticia-extra {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .noticia:hover .noticia-extra {
-    display: block;
-  }
-  
-  .noticia-extra img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-
-
-/* Eliminar márgenes y padding del body */
-body {
-  margin: 0;
-  padding: 0;
+.barra-superior.hidden {
+  top: -60px; /* Ocultar parcialmente, dejando visible una parte */
 }
+
+.barra-superior:hover {
+  top: 0; /* Mostrar completamente al pasar el ratón */
+}
+
+.barra-superior a {
+  color: white; /* Color del texto de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  margin: 0 10px; /* Espaciado entre enlaces */
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.barra-superior a:hover {
+  color: #f4a261; /* Cambiar color al pasar el ratón */
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'The Boston', sans-serif; /* Cambiar la fuente */
+  flex-grow: 1; /* Asegura que el logo ocupe el espacio disponible */
+  text-align: center; /* Centra el texto */
+}
+
+.menu {
+  display: flex;
+}
+
 /* Estilo del top-header */
 .top-header {
   background-color: #0e0a51; /* Fondo desde arriba hasta el medio de las dos líneas */
   color: white; /* Letras blancas */
   text-align: center;
   padding: 20px 0;
-  margin: 0;
+  margin: 0; /* Eliminar márgenes */
 }
 
 .top-header .logo {
@@ -119,6 +68,7 @@ body {
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
   width: 100%;
+  margin: 0; /* Eliminar márgenes */
 }
 
 .categorias a {
@@ -131,4 +81,58 @@ body {
 
 .categorias a:hover {
   text-decoration: underline;
+}
+
+/* Estilo del contenedor de noticias */
+.contenedor-noticias {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.categoria {
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0e0a51;
+}
+
+.noticia {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  width: 90%; /* Ajusta el ancho de las tarjetas */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.noticia:hover {
+  transform: scale(1.02); /* Reduce el aumento de tamaño */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.noticia-extra {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.noticia:hover .noticia-extra {
+  display: block;
+}
+
+.noticia-extra img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
