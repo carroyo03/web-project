@@ -8,7 +8,7 @@
 - **Backend**: Node.js, Express, Axios.
 - **Estilos**: CSS.
 - **Gestión de Dependencias**: NPM.
-- **Despliegue**: Opcionalmente en Vercel/Netlify (frontend) y Render/Railway (backend).
+- **Despliegue**: Tanto frontend y backend desplegados en [Render](render.com).
 
 ## ⚙️ Instalación y Configuración
 
