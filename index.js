@@ -7,7 +7,7 @@ import path from 'path'; // Necesario para manejar rutas
 
 // Cargar variables de entorno
 dotenv.config();
-console.log('API Key cargada:', process.env.NEWS_API_KEY);
+//console.log('API Key cargada:', process.env.NEWS_API_KEY);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
