@@ -27,7 +27,7 @@
    ```bash
    npm install
    
-3. **Configurar el Archivo .env Crea un archivo .env en la raíz del proyecto y añade las siguientes líneas:**
+3. **Crear un archivo .env en la raíz del proyecto y añadir las siguientes líneas:**
    ```bash
    NEWS_API_KEY=tu_api_key
    PORT=3000
