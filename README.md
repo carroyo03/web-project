@@ -20,7 +20,7 @@
 ### Instrucciones
 1. **Clonar el Repositorio**
    ```bash
-   git clone <URL_DEL_REPO>
+   git clone https://github.com/carroyo03/web-project.git
    cd web-project
 
 2. **Instalar Dependencias**
