@@ -82,6 +82,73 @@
       </div>
 </div>
 
+<!-- Banda inferior -->
+<div class="banda-inferior">
+  <div class="logo">TopNews</div>
+  <div class="subtitulo">El Periódico Libre</div>
+  <div class="menu-inferior">
+    <a href="#" id="contacto-link">Contacto</a>
+    <a href="privacidad.html">Política de Privacidad</a>
+    <a href="terminos.html">Términos y Condiciones</a>
+    <a href="sobre.html">Sobre Nosotros</a>
+  </div>
+</div>
+
+<!-- Contenedor para cargar el formulario -->
+<div id="formulario-container">
+  <div id="contacto-formulario" class="formulario-contacto">
+    <form id="contact-form">
+      <span id="cerrar-formulario" class="cerrar-formulario">&times;</span>
+      <h2>¡Escribe tu carta al director!</h2>
+      <label for="nombre">Nombre y apellidos:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+      
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto" required>
+      
+      <label for="mensaje">Escriba aquí su mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+<!-- Ventana modal de agradecimiento -->
+<div id="agradecimiento-modal" class="agradecimiento-modal">
+<div class="agradecimiento-contenido">
+  <span id="cerrar-modal" class="cerrar-modal">&times;</span>
+  <p>¡Gracias por tu mensaje!<br>Nos pondremos en contacto contigo lo antes posible.</p>
+</div>
+</div>
+
+<!-- Ventana modal de política de privacidad -->
+<div id="privacidad-modal" class="privacidad-modal">
+<div class="privacidad-contenido">
+  <span id="cerrar-privacidad-modal" class="cerrar-modal">&times;</span>
+  <p>No tratamos sus datos por lo que goza de una privacidad total con respecto a nuestra web.</p>
+</div>
+</div>
+
+<!-- Ventana modal de términos y condiciones -->
+<div id="terminos-modal" class="terminos-modal">
+<div class="terminos-contenido">
+  <span id="cerrar-terminos-modal" class="cerrar-modal">&times;</span>
+  <p>Nuestros términos son que lea las noticias con criterio y razón, sin caer en engaños doctrinales causados por opiniones o circunstancias sin un contexto completo. <br>¡Disfrute de su lectura!</p>
+</div>
+</div>
+
+<!-- Ventana modal de sobre nosotros -->
+<div id="sobre-modal" class="sobre-modal">
+<div class="sobre-contenido">
+  <span id="cerrar-sobre-modal" class="cerrar-modal">&times;</span>
+  <p>Somos la clase Inf-A de cuarto curso en CUNEF UNIVERSIDAD.<br>Venimos a traerles las noticias más populares para que estén al día de todas las novedades.</p>
+</div>
+</div>
+
 <!-- Botón para subir arriba -->
 <button id="scrollToTopBtn" class="scroll-to-top-btn">↑</button>
 
