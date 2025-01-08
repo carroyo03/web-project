@@ -297,6 +297,7 @@ html, body {
   max-width: 400px;
   text-align: center;
   box-sizing: border-box;
+  border-radius: 8px;
 }
 
 /* Estilo del modal de política de privacidad */
