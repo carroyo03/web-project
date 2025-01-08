@@ -136,3 +136,73 @@
   height: auto;
   margin-bottom: 10px;
 }
+
+/* Eliminar márgenes y padding del body y html */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Estilo de la banda inferior */
+.banda-inferior {
+  background-color: #0e0a51; /* Mismo color que la barra superior */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 0; /* Eliminar márgenes */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  position: relative; /* Asegura que esté en el flujo del documento */
+}
+
+.banda-inferior .logo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white; /* Asegura que el color del texto sea blanco */
+}
+
+.banda-inferior .subtitulo {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: white; /* Asegura que el color del texto sea blanco */
+}
+
+.banda-inferior .menu-inferior {
+  display: flex;
+  justify-content: space-between; /* Distribuir equitativamente */
+  width: 46.66%; 
+  margin: 0 auto; /* Centrar el menú */
+}
+
+.banda-inferior .menu-inferior a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px; /* Reducir el espacio entre los enlaces */
+  font-weight: bold;
+}
+
+.banda-inferior .menu-inferior a:hover {
+  color: #f4a261; /* Cambiar color al pasar el ratón */
+}
+
+/* Estilo del botón para subir arriba */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Cambiado de left a right */
+  display: none; /* Oculto por defecto */
+  background-color: #0e0a51;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 1000; /* Siempre encima */
+}
+
+.scroll-to-top-btn:hover {
+  background-color: #f4a261; /* Cambiar color al pasar el ratón */
+}
