@@ -1,7 +1,7 @@
 # NewsApp - Proyecto Grupal
 
 ## 📑 Descripción
-**NewsApp** es una aplicación web que muestra las noticias destacadas más recientes utilizando la API de [NewsAPI](https://newsapi.org/). Combina un frontend desarrollado con React y un backend construido con Node.js y Express. El proyecto tiene como objetivo integrar conocimientos de desarrollo web y programación de servidores.
+**NewsApp** es una aplicación web que muestra las noticias destacadas más recientes de periódicos de Estados Unidos utilizando la API de [NewsAPI](https://newsapi.org/). Combina un frontend desarrollado con React y un backend construido con Node.js y Express. El proyecto tiene como objetivo integrar conocimientos de desarrollo web y programación de servidores.
 
 ## 🛠️ Tecnologías Usadas
 - **Frontend**: React, Vite, Axios.
@@ -45,7 +45,7 @@
 - **Backend (API)**: Prueba [http://localhost:3000/api/news](http://localhost:3000/api/news) en tu navegador o en herramientas como Postman.
 
 ## ✨ Funcionalidades
-- Obtiene noticias destacadas desde [NewsAPI](https://newsapi.org/).
+- Obtiene noticias destacadas de Estados Unidos desde [NewsAPI](https://newsapi.org/).
 - Backend seguro que oculta la clave API y actúa como proxy entre el frontend y NewsAPI.
 - Manejo de estados (`loading`, `error`) en el frontend.
 - Diseño responsivo básico.
